@@ -1,7 +1,7 @@
 # expStr.js
 ## Expand JS Strings
 
-The concept esentially expands basic regex character classes
+The concept essentially expands basic regex character classes
 
 
 
