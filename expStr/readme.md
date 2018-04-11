@@ -4,8 +4,11 @@
 The concept esentially expands basic regex character classes
 
 
-`expStr("a-zA-Z0-9$_-")`
 
-returns:
 
-`abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_-`
+| Input        | Returns           |
+| ------------- |:-------------:|
+| `expStr("a-zA-Z0-9")`      | `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789` |
+| `expStr("A-Z0-9$_-")`      | `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_-` |
+| `expStr("A-Z0-9$_-[]")`      | `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_-[]` |
+| `expStr("A-Z0-9$_-[Hi world! :)]")`      | `ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_-[ !:)]` |
